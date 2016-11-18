@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+  background-color: #D3D0CB;
+  font-family: font-family: 'Lato', sans-serif;
+  color: #31393C;
+}
+
+.main-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*navbar */
+
+.navbar {
+  background-image: url('../img/bee-tiles.png');
+  background-repeat: repeat;
+  height: 200px;
+  padding: 30px;
+
+}
+
+.navbar h1 {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: lighter;
+}
+
+
+
+/*https://coolors.co/fcba04-fdca40-31393c-2176ff-33a1fd*/
