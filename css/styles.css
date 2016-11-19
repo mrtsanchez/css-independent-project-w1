@@ -7,14 +7,15 @@
 }
 
 body {
-  background-color: #D3D0CB;
-  font-family: font-family: 'Lato', sans-serif;
+  background-color: #FDCA40;
+  font-family: 'Lato', sans-serif;
   color: #31393C;
+  margin: 0;
 }
 
 .main-container {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 35px;
+  padding-left: 35px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -23,15 +24,107 @@ body {
 
 .navbar {
   background-image: url('../img/bee-tiles.png');
-  background-repeat: repeat;
-  height: 200px;
-  padding: 30px;
-
+  min-height: 150px;
+  position: relative;
+  overflow: auto;
 }
 
 .navbar h1 {
   font-family: 'Exo 2', sans-serif;
-  font-weight: lighter;
+  margin-left: 50px;
+  font-variant: small-caps;
+}
+
+.navbar-gradient {
+  background: linear-gradient(to top,#FDCA40 0,rgba(251,251,251,0) 55%);
+  height: 150px;
+  padding-top: 30px;
+}
+
+.top-menu ul {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.top-menu li {
+  display:inline;
+  margin-left: 30px;
+  padding:0;
+}
+
+.top-menu {
+  float: right;
+  position: relative;
+  bottom: 50px;
+  right: 50px;
+}
+
+/*content*/
+
+.featured-content {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 900px;
+  margin-top: 30px;
+}
+
+.featured-image {
+  float: right;
+  margin-left: 30px;
+
+}
+
+.product-description {
+  line-height: 1.8;
+  font-size: 1.5em;
+  padding-top: 20px;
+}
+
+.buy-now {
+  margin-left: 20%;
+  margin-top: 40px;
+}
+
+.main-button {
+  border: 2px solid;
+  border-color: white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  background-color: #FDCA40;
+}
+
+.gallery {
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 900px;
+}
+
+.image-tile {
+  max-width: 150px;
+  float: left;
+  margin-right: 30px;
+}
+
+.gallery-image {
+  width: 100%;
+}
+
+.feature-description {
+  display: none;
+  border: 2px solid;
+  border-color: #31393C;
+  border-radius: 5%;
+  padding: 20px;
+  max-width: 300px;
+}
+
+div div:hover > .feature-description {
+  display: block;
 }
 
 
