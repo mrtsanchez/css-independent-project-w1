@@ -70,7 +70,7 @@ a {
 
 /*content*/
 
-.featured-content, .pricing-container, .form-container {
+.featured-content, .pricing-container, .form-container, .about-container {
   margin-right: auto;
   margin-left: auto;
   max-width: 900px;
@@ -215,6 +215,33 @@ div div:hover > .feature-description {
 .input-container > input:focus {
   border-color: #31393C;
 }
+
+/*about*/
+
+.location {
+  background-image: url('../img/location.png');
+  background-position: center;
+  background-repeat: none;
+  width: 704px;
+  height: 530px;
+  position: relative;
+  margin-left: 20%;
+  margin-bottom: 50px;
+}
+
+.location:after {
+  content: "";
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  background-image: url('../img/placeholder.png');
+  background-size: cover;
+  background-position: center;
+}
+
+
 
 
 
