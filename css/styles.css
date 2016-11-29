@@ -13,6 +13,11 @@ body {
   margin: 0;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .main-container {
   padding-right: 35px;
   padding-left: 35px;
@@ -52,6 +57,10 @@ body {
   padding:0;
 }
 
+.top-menu a:hover {
+  color: white;
+}
+
 .top-menu {
   float: right;
   position: relative;
@@ -61,7 +70,7 @@ body {
 
 /*content*/
 
-.featured-content {
+.featured-content, .pricing-container {
   margin-right: auto;
   margin-left: auto;
   max-width: 900px;
@@ -71,7 +80,6 @@ body {
 .featured-image {
   float: right;
   margin-left: 30px;
-
 }
 
 .product-description {
@@ -97,6 +105,8 @@ body {
   background-color: #FDCA40;
 }
 
+/*gallery*/
+
 .gallery {
   margin-top: 100px;
   margin-right: auto;
@@ -105,14 +115,15 @@ body {
 }
 
 .image-tile {
-  max-width: 150px;
   float: left;
   margin-right: 30px;
 }
 
 .gallery-image {
-  width: 100%;
+  margin-bottom: 30px;
 }
+
+/*features*/
 
 .feature-description {
   display: none;
@@ -121,12 +132,64 @@ body {
   border-radius: 5%;
   padding: 20px;
   max-width: 300px;
+  margin-left: 10px;
+  float: right;
 }
+
+/*.product-description p::first-letter {
+  color: #000B02;
+  font-size: 3em;
+  font-weight: bold;
+  padding-right: 20px;
+  margin-top: -25px;
+  float: left;
+}*/
 
 div div:hover > .feature-description {
-  display: block;
+  display: inline-block;
 }
 
+/*pricing page*/
 
+.price-options {
+  float: left;
+  width: 33%;
+  padding: 10px;
+}
 
-/*https://coolors.co/fcba04-fdca40-31393c-2176ff-33a1fd*/
+.price {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.price:hover {
+  box-shadow: 0 10px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price-plan {
+  background-color: #31393C;
+  color: white;
+}
+
+.price li {
+  border-bottom: 1px solid #D7DEDC;
+  padding: 25px;
+  text-align: center;
+}
+
+.price .highlight {
+  background-color: #D7DEDC;
+}
+
+.purchase-button {
+    background-color: #5386E4;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/*https://coolors.co/fcba04-fdca40-31393c-5386e4-d7dedc*/
