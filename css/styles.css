@@ -70,7 +70,7 @@ a {
 
 /*content*/
 
-.featured-content, .pricing-container {
+.featured-content, .pricing-container, .form-container {
   margin-right: auto;
   margin-left: auto;
   max-width: 900px;
@@ -89,7 +89,7 @@ a {
 }
 
 .buy-now {
-  margin-left: 20%;
+  margin-left: 10%;
   margin-top: 40px;
 }
 
@@ -136,15 +136,6 @@ a {
   float: right;
 }
 
-/*.product-description p::first-letter {
-  color: #000B02;
-  font-size: 3em;
-  font-weight: bold;
-  padding-right: 20px;
-  margin-top: -25px;
-  float: left;
-}*/
-
 div div:hover > .feature-description {
   display: inline-block;
 }
@@ -170,6 +161,14 @@ div div:hover > .feature-description {
 .price-plan {
   background-color: #31393C;
   color: white;
+  font-size: 2em;
+}
+
+.included-features li::first-letter {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-right: 20px;
+  float: left;
 }
 
 .price li {
@@ -178,8 +177,9 @@ div div:hover > .feature-description {
   text-align: center;
 }
 
-.price .highlight {
+.highlight {
   background-color: #D7DEDC;
+  font-size: 1.5em;
 }
 
 .purchase-button {
@@ -191,5 +191,33 @@ div div:hover > .feature-description {
     text-decoration: none;
     font-size: 18px;
 }
+
+/*signup*/
+
+.input-container > input {
+  border-color: #ccc;
+  border-style: none none solid;
+  border-width: medium medium 1px;
+  display: block;
+  font-size: 12px;
+  height: 19px;
+  margin-bottom: 15px;
+  padding: 5px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-container {
+  text-align: center;
+}
+
+.input-container > input:focus {
+  border-color: #31393C;
+}
+
+
+
+
 
 /*https://coolors.co/fcba04-fdca40-31393c-5386e4-d7dedc*/
